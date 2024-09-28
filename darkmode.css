@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+--foreground-color:black;
+--background-color:rgb(255, 255, 255);
+--p-color: rgb(105, 5, 255);
+--banner:grey;
+--navbar:#d00000;
+--icon:#515151;
+--section:#d9d9d9;
+}
+
+.darkmode{
+   --foreground-color:rgb(253, 253, 253);
+--background-color:rgb(9, 9, 9);
+--p-color: rgb(0, 255, 0);
+--banner:rgb(48, 46, 46);
+--navbar:#fb8500;
+--icon:#fb8500;
+--section:#14213d;
+}
+
+*{
+
+   margin: 0px;
+   padding: 0px;
+   font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal
+}
+
+.banner{
+   background-color: var(--banner);
+}
+.banner a{
+   font-size: 20px ;
+   text-decoration: none;
+   margin-left: 30px;
+   color:var(--navbar);
+   padding: 10px;
+
+}
+
+#HOME p{ text-align: center;
+
+}
+#BLOG p{ text-align: center;
+
+}
+#SERVICES p{ text-align: center;
+
+}
+#ABOUT p{ text-align: center;
+
+}
+
+
+section{
+   height: 1000px;
+   background-color: var(--section);
+}
+
+h1{
+   font-size: 100px;
+   
+}
+h2{
+   text-align: center;
+
+}
+p{
+   color: var(--p-color);
+}
+
+body{
+   background-color: var(--background-color);
+   color: var(--foreground-color);
+   min-height: 100vh;
+
+}
+
+#theme-switch{
+   background-color: var(--background-color);
+   height: 50px;
+   width: 50px;
+   padding:0px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   display: flex;
+   position: fixed;
+top: 20px;
+right: 20px;
+}
+#theme-switch svg{
+   fill: var(--icon);
+}
+
+#theme-switch svg:last-child{
+   display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+   display: none;
+}
+.darkmode #theme-switch svg:last-child{
+   display: block;
+}
